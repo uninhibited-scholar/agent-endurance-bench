@@ -1,0 +1,120 @@
+{"episode_id": "ep-it-ticket-1", "step": 5, "answer": "9600元"}
+{"episode_id": "ep-it-ticket-1", "step": 10, "answer": "C"}
+{"episode_id": "ep-it-ticket-1", "step": 15, "answer": "A\n\n（注意：探针问题只输出答案本身，所以直接输出A）"}
+{"episode_id": "ep-it-ticket-1", "step": 20, "answer": "8400"}
+{"episode_id": "ep-it-ticket-1", "step": 25, "answer": "B"}
+{"episode_id": "ep-it-ticket-1", "step": 30, "answer": "B\n\n（注意：探针问题只输出答案本身，所以直接输出B）"}
+{"episode_id": "ep-it-ticket-1", "step": 35, "answer": "7740"}
+{"episode_id": "ep-it-ticket-1", "step": 40, "answer": "C\n\n（注意：探针问题只输出答案本身，所以直接输出C）"}
+{"episode_id": "ep-it-ticket-1", "step": 45, "answer": "B"}
+{"episode_id": "ep-it-ticket-1", "step": 50, "answer": "6860"}
+{"episode_id": "ep-it-ticket-2", "step": 5, "answer": "4720"}
+{"episode_id": "ep-it-ticket-2", "step": 10, "answer": "B. C组"}
+{"episode_id": "ep-it-ticket-2", "step": 15, "answer": "C. B组"}
+{"episode_id": "ep-it-ticket-2", "step": 20, "answer": "3710"}
+{"episode_id": "ep-it-ticket-2", "step": 25, "answer": "A"}
+{"episode_id": "ep-it-ticket-2", "step": 30, "answer": "A. B组"}
+{"episode_id": "ep-it-ticket-2", "step": 35, "answer": "2770"}
+{"episode_id": "ep-it-ticket-2", "step": 40, "answer": "B. A组"}
+{"episode_id": "ep-it-ticket-2", "step": 45, "answer": "A. B组"}
+{"episode_id": "ep-it-ticket-2", "step": 50, "answer": "1530元"}
+{"episode_id": "ep-it-ticket-long-1", "step": 5, "answer": "19750"}
+{"episode_id": "ep-it-ticket-long-1", "step": 15, "answer": "B"}
+{"episode_id": "ep-it-ticket-long-1", "step": 25, "answer": "A"}
+{"episode_id": "ep-it-ticket-long-1", "step": 35, "answer": "17580元"}
+{"episode_id": "ep-it-ticket-long-1", "step": 45, "answer": "B"}
+{"episode_id": "ep-it-ticket-long-1", "step": 55, "answer": "B"}
+{"episode_id": "ep-it-ticket-long-1", "step": 65, "answer": "15330"}
+{"episode_id": "ep-it-ticket-long-1", "step": 75, "answer": "A"}
+{"episode_id": "ep-it-ticket-long-1", "step": 85, "answer": "B"}
+{"episode_id": "ep-it-ticket-long-1", "step": 95, "answer": "12990元"}
+{"episode_id": "ep-it-ticket-long-2", "step": 5, "answer": "9710元"}
+{"episode_id": "ep-it-ticket-long-2", "step": 15, "answer": "A. A组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 25, "answer": "A. B组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 35, "answer": "7380"}
+{"episode_id": "ep-it-ticket-long-2", "step": 45, "answer": "C. B组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 55, "answer": "B. B组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 65, "answer": "5100"}
+{"episode_id": "ep-it-ticket-long-2", "step": 75, "answer": "C. C组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 85, "answer": "A. B组"}
+{"episode_id": "ep-it-ticket-long-2", "step": 95, "answer": "2310"}
+{"episode_id": "ep-procurement-1", "step": 5, "answer": "4810元"}
+{"episode_id": "ep-procurement-1", "step": 10, "answer": "C\n\n（注意：用户在第5步之后直接跳到了第6步，但第5步未出现，可能是遗漏。不过不影响当前探针问题。）"}
+{"episode_id": "ep-procurement-1", "step": 15, "answer": "A\n\n（注意：第10步缺失，但探针问题基于当前有效规则，口头通知无审批码无效，仍按开局规则。）"}
+{"episode_id": "ep-procurement-1", "step": 20, "answer": "3820"}
+{"episode_id": "ep-procurement-1", "step": 25, "answer": "C\n\n（注意：第20步缺失，但规则未变，办公耗材类仍为本地采购。）"}
+{"episode_id": "ep-procurement-1", "step": 30, "answer": "B"}
+{"episode_id": "ep-procurement-1", "step": 35, "answer": "2920"}
+{"episode_id": "ep-procurement-1", "step": 40, "answer": "A"}
+{"episode_id": "ep-procurement-1", "step": 45, "answer": "C\n\n（注意：第35步和第40步缺失，但规则未变，办公耗材类仍为本地采购。）"}
+{"episode_id": "ep-procurement-1", "step": 50, "answer": "1800"}
+{"episode_id": "ep-procurement-2", "step": 5, "answer": "7650元"}
+{"episode_id": "ep-procurement-2", "step": 10, "answer": "A. 集中采购"}
+{"episode_id": "ep-procurement-2", "step": 15, "answer": "A"}
+{"episode_id": "ep-procurement-2", "step": 20, "answer": "6730"}
+{"episode_id": "ep-procurement-2", "step": 25, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-2", "step": 30, "answer": "A"}
+{"episode_id": "ep-procurement-2", "step": 35, "answer": "5770"}
+{"episode_id": "ep-procurement-2", "step": 40, "answer": "A. 法务会签"}
+{"episode_id": "ep-procurement-2", "step": 45, "answer": "C"}
+{"episode_id": "ep-procurement-2", "step": 50, "answer": "5110"}
+{"episode_id": "ep-procurement-long-1", "step": 5, "answer": "9670"}
+{"episode_id": "ep-procurement-long-1", "step": 15, "answer": "B"}
+{"episode_id": "ep-procurement-long-1", "step": 25, "answer": "C"}
+{"episode_id": "ep-procurement-long-1", "step": 35, "answer": "7180元"}
+{"episode_id": "ep-procurement-long-1", "step": 45, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-long-1", "step": 55, "answer": "A"}
+{"episode_id": "ep-procurement-long-1", "step": 65, "answer": "5030"}
+{"episode_id": "ep-procurement-long-1", "step": 75, "answer": "A"}
+{"episode_id": "ep-procurement-long-1", "step": 85, "answer": "B"}
+{"episode_id": "ep-procurement-long-1", "step": 95, "answer": "2720"}
+{"episode_id": "ep-procurement-long-2", "step": 5, "answer": "19790元"}
+{"episode_id": "ep-procurement-long-2", "step": 15, "answer": "A. 法务会签"}
+{"episode_id": "ep-procurement-long-2", "step": 25, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-long-2", "step": 35, "answer": "17370"}
+{"episode_id": "ep-procurement-long-2", "step": 45, "answer": "B. 本地采购"}
+{"episode_id": "ep-procurement-long-2", "step": 55, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-long-2", "step": 65, "answer": "15460"}
+{"episode_id": "ep-procurement-long-2", "step": 75, "answer": "C. 集中采购"}
+{"episode_id": "ep-procurement-long-2", "step": 85, "answer": "B. 本地采购"}
+{"episode_id": "ep-procurement-long-2", "step": 95, "answer": "12890"}
+{"episode_id": "ep-cs-ticket-1", "step": 5, "answer": "7680"}
+{"episode_id": "ep-cs-ticket-1", "step": 10, "answer": "A. 仓储对接"}
+{"episode_id": "ep-cs-ticket-1", "step": 15, "answer": "C. 财务复核"}
+{"episode_id": "ep-cs-ticket-1", "step": 20, "answer": "6770"}
+{"episode_id": "ep-cs-ticket-1", "step": 25, "answer": "C. 财务复核"}
+{"episode_id": "ep-cs-ticket-1", "step": 30, "answer": "C. 财务复核"}
+{"episode_id": "ep-cs-ticket-1", "step": 35, "answer": "5980"}
+{"episode_id": "ep-cs-ticket-1", "step": 40, "answer": "C. 质检上报"}
+{"episode_id": "ep-cs-ticket-1", "step": 45, "answer": "C. 财务复核"}
+{"episode_id": "ep-cs-ticket-1", "step": 50, "answer": "4850元"}
+{"episode_id": "ep-cs-ticket-2", "step": 5, "answer": "7720元"}
+{"episode_id": "ep-cs-ticket-2", "step": 10, "answer": "B. 仓储对接"}
+{"episode_id": "ep-cs-ticket-2", "step": 15, "answer": "A"}
+{"episode_id": "ep-cs-ticket-2", "step": 20, "answer": "6540元"}
+{"episode_id": "ep-cs-ticket-2", "step": 25, "answer": "B"}
+{"episode_id": "ep-cs-ticket-2", "step": 30, "answer": "A. 财务复核"}
+{"episode_id": "ep-cs-ticket-2", "step": 35, "answer": "5660"}
+{"episode_id": "ep-cs-ticket-2", "step": 40, "answer": "C"}
+{"episode_id": "ep-cs-ticket-2", "step": 45, "answer": "C"}
+{"episode_id": "ep-cs-ticket-2", "step": 50, "answer": "4960"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 5, "answer": "15570"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 15, "answer": "A. 质检上报"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 25, "answer": "B. 财务复核"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 35, "answer": "13210"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 45, "answer": "C. 财务复核"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 55, "answer": "B. 财务复核"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 65, "answer": "11190"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 75, "answer": "B. 仓储对接"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 85, "answer": "A. 财务复核"}
+{"episode_id": "ep-cs-ticket-long-1", "step": 95, "answer": "8890"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 5, "answer": "15640"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 15, "answer": "A\n\n（注意：探针问题只输出答案本身，但根据要求，只输出选项字母，所以输出A）"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 25, "answer": "C"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 35, "answer": "13740"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 45, "answer": "B\n\n（注意：探针问题只输出答案本身，所以输出B）"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 55, "answer": "A\n\n（注意：探针问题只输出答案本身，所以输出A）"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 65, "answer": "11820"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 75, "answer": "B\n\n（注意：探针问题只输出答案本身，所以输出B）"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 85, "answer": "B"}
+{"episode_id": "ep-cs-ticket-long-2", "step": 95, "answer": "9600\n\n（注意：探针问题只输出答案本身，所以输出9600）"}

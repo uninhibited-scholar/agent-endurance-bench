@@ -17,6 +17,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def norm(s):
     s = str(s).strip()
+    first = next((ln.strip() for ln in s.splitlines() if ln.strip()), "")
+    m = re.fullmatch(r"[ABC][.。、：:]?", first.upper())
+    if m: return first.upper()[0]
+    m = re.search(r"[ABC]", first.upper())
+    if m and len(first) <= 24: return m.group(0)
+    m = re.search(r"-?\d+", first.replace(",", ""))
+    if m: return m.group(0)
     m = re.search(r"[ABC]", s.upper())
     if m and len(s) <= 24: return m.group(0)
     m = re.search(r"-?\d+", s.replace(",", ""))
