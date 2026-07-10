@@ -33,10 +33,13 @@ Agent 长任务「耐力/退化」评测基准（long-horizon degradation · 可
 | `endurance_score` | ↑ | 30 步之后的探针准确率 |
 
 ## 基线：崩塌线与上界
-| 基线 | slope ↓ | endurance ↑ | resist ↑ | 说明 |
-|---|---:|---:|---:|---|
-| window_agent (K=10) | 0.933 | 0.061 | 0.0 | 只记最近 10 步：窗口内满分，滑出即崩塌 |
-| perfect_memory | 0.0 | 1.0 | 1.0 | 完美记忆上界（oracle） |
+| 模型/基线 | slope ↓ | endurance ↑ | constraint ↑ | state ↑ | resist ↑ |
+|---|---:|---:|---:|---:|---:|
+| window_agent (K=10) | 0.933 | 0.061 | 0.417 | 0.25 | 0.0 |
+| **glm-5.2**（120 探针全量） | **0.167** | **0.833** | 0.944 | 0.812 | **1.0** |
+| perfect_memory (oracle) | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+
+**glm-5.2 首个真实模型结果**：规则记忆 94%、抗带偏 100%——但 **11 个错误里 9 个是状态追踪**（累计预算算错），且集中在 30 步以后（91–100 步段掉到 50%）。长任务退化的具体形态不是"忘规则"，而是**"记得规则、算错账"**：数值状态随深度漂移（17580→17680 级联误差、答成过期旧值）。另有 2 个格式崩坏（探针答成数字而非选项字母）。这正是本基准要暴露的失效模式。
 
 ```
 window_agent  (probe accuracy by step decile)
@@ -46,7 +49,7 @@ window_agent  (probe accuracy by step decile)
   步  41-50                                 0%
   步  91-100                                0%
 ```
-**看点**：真实模型的 retention 曲线会落在崩塌线与 oracle 之间——位置即其「耐力」。跑 `python3 scripts/curve.py predictions_*.jsonl` 直接对比多模型曲线。
+**看点**：真实模型曲线落在崩塌线与 oracle 之间——glm-5.2 的位置：early 100% → late 83% → 91-100 步段 50%。跑 `python3 scripts/curve.py predictions_*.jsonl` 直接对比多模型曲线。
 
 ## 跑真实模型
 ```bash

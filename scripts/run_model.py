@@ -25,7 +25,9 @@ def call(base, key, model, messages, max_tokens):
     for _r in range(3):
         try:
             with urllib.request.urlopen(req, timeout=180, context=_SSL) as r:
-                return json.loads(r.read())["choices"][0]["message"]["content"]
+                msg = json.loads(r.read())["choices"][0]["message"]
+                # reasoning models: final answer in content; fall back to reasoning tail
+                return msg.get("content") or (msg.get("reasoning_content") or "")[-200:]
         except Exception:
             time.sleep(2 * (_r + 1))
     return ""
@@ -61,7 +63,7 @@ def main():
             for s in e["steps"]:
                 msgs.append({"role": "user", "content": s["input"]})
                 is_probe = s["type"] == "probe"
-                reply = call(a.base_url, a.key, a.model, msgs, 60 if is_probe else 40)
+                reply = call(a.base_url, a.key, a.model, msgs, 1024 if is_probe else 512)
                 msgs.append({"role": "assistant", "content": reply})
                 if is_probe:
                     w.write(json.dumps({"episode_id": e["id"], "step": s["step"],
