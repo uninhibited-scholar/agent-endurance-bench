@@ -8,7 +8,7 @@
 - [x] 新增 `resist` 抗干扰探针 + distractor 干扰步（无审批码规则变更、假预算数）。
 - [x] `scripts/curve.py` ASCII retention 曲线，多模型直接对比。
 - [x] 双基线：window_agent（崩塌线 slope 0.933）+ perfect_memory（oracle 上界 slope 0.0）。
-- [x] 探针封闭 gold（选项字母 / 数字），`scripts/score.py` 纯机器评分：retention_curve / degradation_slope / constraint_accuracy / state_accuracy / endurance_score。
+- [x] 探针确定性公开 gold（选项字母 / 数字），`scripts/score.py` 纯机器评分：retention_curve / degradation_slope / constraint_accuracy / state_accuracy / endurance_score。
 - [x] `scripts/check_bench.py` + CI：schema、探针覆盖、**gold 重算校验**（state 探针由花费累加重算）、防作弊。
 - [x] 滑窗基线 `baselines/window_agent.py`（K=10）：early 1.0 → xlong 0.067，slope 0.933，resist 0.0。
 - [x] `scripts/run_model.py`：真实多轮对话回放（system=约束，逐步累积历史），任意 OpenAI 兼容端点。

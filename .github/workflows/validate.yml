@@ -7,5 +7,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
+      - name: Determinism lock — regenerate episodes, require zero diff
+        run: |
+          python3 scripts/gen_episodes.py
+          git diff --exit-code -- data/episodes.jsonl
       - run: python3 scripts/check_bench.py
       - run: python3 baselines/window_agent.py && python3 baselines/perfect_memory.py && python3 scripts/score.py baselines/predictions_window_agent.jsonl && python3 scripts/curve.py baselines/predictions_window_agent.jsonl
