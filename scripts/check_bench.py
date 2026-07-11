@@ -23,7 +23,7 @@ def main():
         i = e.get("id")
         if set(e) != EKEYS: prob.append(f"{i} keys {sorted(e)}")
         n = e.get("n_steps")
-        if n not in (50, 100): prob.append(f"{i} n_steps {n} not in (50,100)")
+        if n not in (50, 100, 200): prob.append(f"{i} n_steps {n} not in (50,100,200)")
         if len(e.get("steps", [])) != n: prob.append(f"{i} steps len != n_steps")
         if len(str(e.get("constraints",""))) < 60: prob.append(f"{i} constraints too short")
         if "审批码" not in e.get("constraints",""): prob.append(f"{i} missing rule-change guard clause")
@@ -35,8 +35,9 @@ def main():
                 spent += s.get("cost", 0)
             elif t == "distractor":
                 distractors += 1
-                if "审批码" in s["input"] and "无审批码" not in s["input"]:
-                    prob.append(f"{i} step{s['step']} distractor carries approval code")
+                good_code = "OK-" + i[-4:] if len(i) >= 4 else ""
+                if good_code and ("【" + good_code + "】") in s["input"]:
+                    prob.append(f"{i} step{s['step']} distractor carries VALID approval code")
             elif t == "probe":
                 probes += 1; kinds_seen.add(s.get("probe_kind"))
                 if s["step"] not in pset: prob.append(f"{i} probe at odd step {s['step']}")
@@ -49,12 +50,15 @@ def main():
             else:
                 prob.append(f"{i} bad step type {t}")
         if probes != len(pset): prob.append(f"{i} probes {probes} != {len(pset)}")
-        if distractors < 2: prob.append(f"{i} needs >=2 distractors, has {distractors}")
+        need_d = 5 if n == 200 else 2
+        if distractors < need_d: prob.append(f"{i} needs >={need_d} distractors, has {distractors}")
         if kinds_seen != KINDS: prob.append(f"{i} probe kinds {sorted(kinds_seen)} incomplete")
         if e["budget0"] - spent < 0: prob.append(f"{i} budget overspent by design")
     ids = [e["id"] for e in eps]
     if len(ids) != len(set(ids)): prob.append("dup id")
-    if len(eps) < 12: prob.append(f"too few episodes ({len(eps)} < 12)")
+    if len(eps) < 15: prob.append(f"too few episodes ({len(eps)} < 15)")
+    x2 = sum(1 for e in eps if e["n_steps"] == 200)
+    if x2 < 3: prob.append(f"need >=3 x200 episodes, has {x2}")
     doms = {e["domain"] for e in eps}
     if len(doms) < 3: prob.append("need >=3 domains")
     longs = sum(1 for e in eps if e["n_steps"] == 100)

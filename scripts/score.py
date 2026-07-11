@@ -33,9 +33,10 @@ def bucket(step):
     if step <= 10: return "early"
     if step <= 30: return "mid"
     if step <= 50: return "late"
-    return "xlong"
+    if step <= 100: return "xlong"
+    return "xxlong"
 
-ORDER = ["early", "mid", "late", "xlong"]
+ORDER = ["early", "mid", "late", "xlong", "xxlong"]
 
 def main():
     if len(sys.argv) < 2:
