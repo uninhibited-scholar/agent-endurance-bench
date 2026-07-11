@@ -118,3 +118,63 @@
 {"episode_id": "ep-cs-ticket-long-2", "step": 75, "answer": "B"}
 {"episode_id": "ep-cs-ticket-long-2", "step": 85, "answer": "B"}
 {"episode_id": "ep-cs-ticket-long-2", "step": 95, "answer": ". Remaining: 12780\nStep 50: -80. Total: 3300. Remaining: 12700\nStep 51: -50. Total: 3350. Remaining: 12650\nStep 52: -80. Total: 3430. Remaining: 12570\nStep 53: -150. Total: 3580. Remaining: 12420\nStep"}
+{"episode_id": "ep-it-ticket-x200", "step": 5, "answer": "29640"}
+{"episode_id": "ep-it-ticket-x200", "step": 15, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 25, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 35, "answer": "27945"}
+{"episode_id": "ep-it-ticket-x200", "step": 45, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 55, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 65, "answer": "S52: Acc #x200052, -210 -> 26585 - 210 = 26375\nS53: DB #x200053, +60 -> 26375 + 60 = 26435\nS54: Net #x200054, -125 -> 26435 - 125 = 26310\nProbe: C\nS56: Acc #x200056, +60 -> 26310 + 60 = 26370\nS57: Net"}
+{"episode_id": "ep-it-ticket-x200", "step": 75, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 85, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 95, "answer": "100\nStep 34: DB #x200034, cost 155. Budget: 28100 - 155 = 27945\nProbe 35: 27945\n\nStep 36: Acc #x200036, cost 155. Budget: 27945 - 155 = 27790\nStep 37: Net #x200037, refund 40. Budget: 27790 + 40 = 278"}
+{"episode_id": "ep-it-ticket-x200", "step": 105, "answer": "A"}
+{"episode_id": "ep-it-ticket-x200", "step": 115, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 125, "answer": "155 = 26935\nS49: Acc, -55。26935 - 55 = 26880\nS50: DB, -210。26880 - 210 = 26670\nS51: DB, -85。26670 - 85 = 26585\nS52: Acc, -210。26585 - 210 = 26375\nS53: DB, refund 60。26375 + 60 = 26435\nS54: Net, -125。"}
+{"episode_id": "ep-it-ticket-x200", "step": 135, "answer": "A"}
+{"episode_id": "ep-it-ticket-x200", "step": 145, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 155, "answer": "00054, -125 -> 26310\nProbe: C (DB -> B)\nS56: Acc #x200056, +60 -> 26370\nS57: Net #x200057, -55 -> 26315\nS58: msg (no code, no change) -> 26315\nS59: Acc #x200059, +60 -> 26375\nS60: Net #x200060, -55 ->"}
+{"episode_id": "ep-it-ticket-x200", "step": 165, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 175, "answer": "A"}
+{"episode_id": "ep-it-ticket-x200", "step": 185, "answer": "55 = 27790\n第37步：Net #x200037，退回 40。27790 + 40 = 27830\n第38步：消息（无变化）\n第39步：Acc #x200039，花费 125。27830 - 125 = 27705\n第40步：Net #x200040，花费 125。27705 - 125 = 27580\n第41步：DB #x200041，花费 155。27580 - 155 = 27425"}
+{"episode_id": "ep-it-ticket-x200", "step": 195, "answer": "B"}
+{"episode_id": "ep-procurement-x200", "step": 5, "answer": "29420"}
+{"episode_id": "ep-procurement-x200", "step": 15, "answer": "A"}
+{"episode_id": "ep-procurement-x200", "step": 25, "answer": "C"}
+{"episode_id": "ep-procurement-x200", "step": 35, "answer": "27485"}
+{"episode_id": "ep-procurement-x200", "step": 45, "answer": "A"}
+{"episode_id": "ep-procurement-x200", "step": 55, "answer": "A"}
+{"episode_id": "ep-procurement-x200", "step": 65, "answer": "25555"}
+{"episode_id": "ep-procurement-x200", "step": 75, "answer": "C"}
+{"episode_id": "ep-procurement-x200", "step": 85, "answer": "B"}
+{"episode_id": "ep-procurement-x200", "step": 95, "answer": "办公耗材) -85 → 26695\nStep 49: #x200049 (办公耗材) -55 → 26640\nStep 50: #x200050 (办公耗材) -210 → 26430\nStep 51: #x200051 (电子设备) -35 → 26395\nStep 52: #x200052 撤销 +40 → 26435\nStep 53: #x200053 (软件许可) -125 → 26310"}
+{"episode_id": "ep-procurement-x200", "step": 105, "answer": "B"}
+{"episode_id": "ep-procurement-x200", "step": 115, "answer": "A"}
+{"episode_id": "ep-procurement-x200", "step": 125, "answer": "tep 48: #x200048 (办公耗材) -85 -> 26695\nStep 49: #x200049 (办公耗材) -55 -> 26640\nStep 50: #x200050 (办公耗材) -210 -> 26430\nStep 51: #x200051 (电子设备) -35 -> 26395\nStep 52: #x200052 撤销 +40 -> 26435\nStep 53: #x200"}
+{"episode_id": "ep-procurement-x200", "step": 135, "answer": "C"}
+{"episode_id": "ep-procurement-x200", "step": 145, "answer": "C"}
+{"episode_id": "ep-procurement-x200", "step": 155, "answer": "30\nStep 51: #x200051 (电子设备) -35 -> 26395\nStep 52: #x200052 撤销 +40 -> 26435\nStep 53: #x200053 (软件许可) -125 -> 26310\nStep 54: #x200054 (办公耗材) -125 -> 26185\nStep 56: #x200056 (电子设备) -210 -> 25975\nStep 57:"}
+{"episode_id": "ep-procurement-x200", "step": 165, "answer": "B"}
+{"episode_id": "ep-procurement-x200", "step": 175, "answer": "C"}
+{"episode_id": "ep-procurement-x200", "step": 185, "answer": "-210 -> 26430\nStep 51: #x200051 (Electronics) -35 -> 26395\nStep 52: #x200052 Cancel +40 -> 26435\nStep 53: #x200053 (Software) -125 -> 26310\nStep 54: #x200054 (Supplies) -125 -> 26185\nStep 56: #x200056"}
+{"episode_id": "ep-procurement-x200", "step": 195, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 5, "answer": "29635"}
+{"episode_id": "ep-cs-ticket-x200", "step": 15, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 25, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 35, "answer": "26695"}
+{"episode_id": "ep-cs-ticket-x200", "step": 45, "answer": "C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 55, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 65, "answer": "24595"}
+{"episode_id": "ep-cs-ticket-x200", "step": 75, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 85, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 95, "answer": "55 = 24385.\nStep 68: Refund, 35. Budget: 24385 - 35 = 24350.\nStep 69: Refund, 125. Budget: 24350 - 125 = 24225.\nStep 70: Defect, 35. Budget: 24225 - 35 = 24190.\nStep 71: Refund, 55. Budget: 24190 - 55"}
+{"episode_id": "ep-cs-ticket-x200", "step": 105, "answer": "C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 115, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 125, "answer": "）。25945 - 85 = 25860\n第48步：55（产品缺陷）。25860 - 55 = 25805\n第49步：125（退款）。25805 - 125 = 25680\n第50步：85（产品缺陷）。25680 - 85 = 25595\n第51步：90（物流撤销）。25595 + 90 = 25685\n第52步：210（退款）。25685 - 210 = 25475\n第53步：90（退款撤销）。"}
+{"episode_id": "ep-cs-ticket-x200", "step": 135, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 145, "answer": "C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 155, "answer": "60 => 23955\n79. #79 Ref -35 => 23920\n80. #80 Log +90 => 24010\n81. #81 Def -125 => 23885\n82. #82 Def -85 => 23800\n83. #83 Def -210 => 23590\n84. #84 Log -155 => 23435\n[Probe] B\n86. #86 Log -35 => 23400"}
+{"episode_id": "ep-cs-ticket-x200", "step": 165, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 175, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 185, "answer": ": 25860 - 55 = 25805\n49. 退款 -125: 25805 - 125 = 25680\n50. 缺陷 -85: 25680 - 85 = 25595\n51. 物流 +90: 25595 + 90 = 25685\n52. 退款 -210: 25685 - 210 = 25475\n53. 退款 +90: 25475 + 90 = 25565\n54. 缺陷 -125: 25565 -"}
+{"episode_id": "ep-cs-ticket-x200", "step": 195, "answer": "A"}

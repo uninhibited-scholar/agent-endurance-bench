@@ -118,3 +118,63 @@
 {"episode_id": "ep-cs-ticket-long-2", "step": 75, "answer": "B\n\n（注意：探针问题只输出答案本身，所以输出B）"}
 {"episode_id": "ep-cs-ticket-long-2", "step": 85, "answer": "B"}
 {"episode_id": "ep-cs-ticket-long-2", "step": 95, "answer": "9600\n\n（注意：探针问题只输出答案本身，所以输出9600）"}
+{"episode_id": "ep-it-ticket-x200", "step": 5, "answer": "29640元"}
+{"episode_id": "ep-it-ticket-x200", "step": 15, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 25, "answer": "C. B组"}
+{"episode_id": "ep-it-ticket-x200", "step": 35, "answer": "27945"}
+{"episode_id": "ep-it-ticket-x200", "step": 45, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 55, "answer": "C. B组"}
+{"episode_id": "ep-it-ticket-x200", "step": 65, "answer": "26055元"}
+{"episode_id": "ep-it-ticket-x200", "step": 75, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 85, "answer": "C"}
+{"episode_id": "ep-it-ticket-x200", "step": 95, "answer": "23930"}
+{"episode_id": "ep-it-ticket-x200", "step": 105, "answer": "A"}
+{"episode_id": "ep-it-ticket-x200", "step": 115, "answer": "B"}
+{"episode_id": "ep-it-ticket-x200", "step": 125, "answer": "20860"}
+{"episode_id": "ep-it-ticket-x200", "step": 135, "answer": "A. C组"}
+{"episode_id": "ep-it-ticket-x200", "step": 145, "answer": "B. B组"}
+{"episode_id": "ep-it-ticket-x200", "step": 155, "answer": "18880"}
+{"episode_id": "ep-it-ticket-x200", "step": 165, "answer": "C. A组"}
+{"episode_id": "ep-it-ticket-x200", "step": 175, "answer": "A. B组"}
+{"episode_id": "ep-it-ticket-x200", "step": 185, "answer": "16880"}
+{"episode_id": "ep-it-ticket-x200", "step": 195, "answer": "B"}
+{"episode_id": "ep-procurement-x200", "step": 5, "answer": "29420"}
+{"episode_id": "ep-procurement-x200", "step": 15, "answer": "A. 法务会签"}
+{"episode_id": "ep-procurement-x200", "step": 25, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 35, "answer": "27485元"}
+{"episode_id": "ep-procurement-x200", "step": 45, "answer": "A. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 55, "answer": "A. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 65, "answer": "25555"}
+{"episode_id": "ep-procurement-x200", "step": 75, "answer": "C. 集中采购"}
+{"episode_id": "ep-procurement-x200", "step": 85, "answer": "B. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 95, "answer": "24655"}
+{"episode_id": "ep-procurement-x200", "step": 105, "answer": "B. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 115, "answer": "A. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 125, "answer": "21915"}
+{"episode_id": "ep-procurement-x200", "step": 135, "answer": "C. 集中采购"}
+{"episode_id": "ep-procurement-x200", "step": 145, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 155, "answer": "20190"}
+{"episode_id": "ep-procurement-x200", "step": 165, "answer": "B. 法务会签"}
+{"episode_id": "ep-procurement-x200", "step": 175, "answer": "C. 本地采购"}
+{"episode_id": "ep-procurement-x200", "step": 185, "answer": "18420"}
+{"episode_id": "ep-procurement-x200", "step": 195, "answer": "A. 本地采购"}
+{"episode_id": "ep-cs-ticket-x200", "step": 5, "answer": "29635"}
+{"episode_id": "ep-cs-ticket-x200", "step": 15, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 25, "answer": "A</think>A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 35, "answer": "26695</think>26695"}
+{"episode_id": "ep-cs-ticket-x200", "step": 45, "answer": "C</think>C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 55, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 65, "answer": "24595</think>24595"}
+{"episode_id": "ep-cs-ticket-x200", "step": 75, "answer": "A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 85, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 95, "answer": "23115"}
+{"episode_id": "ep-cs-ticket-x200", "step": 105, "answer": "C</think>C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 115, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 125, "answer": "21090"}
+{"episode_id": "ep-cs-ticket-x200", "step": 135, "answer": "A</think>A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 145, "answer": "C</think>C"}
+{"episode_id": "ep-cs-ticket-x200", "step": 155, "answer": "19010"}
+{"episode_id": "ep-cs-ticket-x200", "step": 165, "answer": "B"}
+{"episode_id": "ep-cs-ticket-x200", "step": 175, "answer": "A</think>A"}
+{"episode_id": "ep-cs-ticket-x200", "step": 185, "answer": "16710"}
+{"episode_id": "ep-cs-ticket-x200", "step": 195, "answer": "A</think>A"}
