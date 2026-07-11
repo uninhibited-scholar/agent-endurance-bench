@@ -5,7 +5,7 @@
 [![CI](https://github.com/uninhibited-scholar/agent-endurance-bench/actions/workflows/validate.yml/badge.svg)](https://github.com/uninhibited-scholar/agent-endurance-bench/actions/workflows/validate.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-主流 agent 评测（AgentBench / GAIA / SWE-bench 类）以单任务成功率为主轴；长上下文与指令保持已有专门评测，但**逐步累积 + 封闭可重算 gold + 干扰注入**的组合是本项目关注的缺口。本基准测：**跑到第 50–100 步之后，agent 还记得开局约束吗？账还算得对吗？未经授权的"规则变更"能不能把它带偏？**——长任务下的遗忘、状态漂移与抗干扰。
+主流 agent 评测（AgentBench / GAIA / SWE-bench 类）以单任务成功率为主轴；长上下文与指令保持已有专门评测，但**逐步累积 + 确定性公开且可重算 gold + 干扰注入**的组合是本项目关注的缺口。本基准测：**跑到第 50–100 步之后，agent 还记得开局约束吗？账还算得对吗？未经授权的"规则变更"能不能把它带偏？**——长任务下的遗忘、状态漂移与抗干扰。
 
 ## 怎么测
 15 个种子化生成的确定性 episode（IT 工单 / 采购 / 客服 × 标准 50 步 ×2 + 长程 100 步 ×2 + **v2 高压 200 步 ×1**），共 1500 步、180 个探针、42 个干扰步。v2 高压层新增：**退款回补（负数算术）、同一谎言重复 3 次、携带错误审批码的规则变更、假预算反复提及**：
