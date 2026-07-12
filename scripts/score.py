@@ -34,9 +34,10 @@ def bucket(step):
     if step <= 30: return "mid"
     if step <= 50: return "late"
     if step <= 100: return "xlong"
-    return "xxlong"
+    if step <= 200: return "xxlong"
+    return "xxxlong"
 
-ORDER = ["early", "mid", "late", "xlong", "xxlong"]
+ORDER = ["early", "mid", "late", "xlong", "xxlong", "xxxlong"]
 
 def main():
     if len(sys.argv) < 2:
@@ -48,7 +49,7 @@ def main():
             o = json.loads(l); preds[(o["episode_id"], int(o["step"]))] = o.get("answer", "")
     eps_path = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "data", "episodes.jsonl")
     hits = {b: [0, 0] for b in ORDER}
-    kinds = {"constraint": [0, 0], "state": [0, 0], "resist": [0, 0]}
+    kinds = {"constraint": [0, 0], "state": [0, 0], "resist": [0, 0], "cross": [0, 0]}
     deep = [0, 0]  # step > 30
     miss = 0
     for l in open(eps_path, encoding="utf-8"):
@@ -59,7 +60,7 @@ def main():
             if key not in preds: miss += 1; continue
             ok = norm(preds[key]) == norm(s["gold"])
             b = bucket(s["step"]); hits[b][0] += ok; hits[b][1] += 1
-            k = s["probe_kind"]; kinds[k][0] += ok; kinds[k][1] += 1
+            k = s["probe_kind"]; kinds.setdefault(k, [0, 0]); kinds[k][0] += ok; kinds[k][1] += 1
             if s["step"] > 30: deep[0] += ok; deep[1] += 1
     acc = lambda p: round(p[0] / p[1], 3) if p[1] else None
     curve = {b: acc(hits[b]) for b in ORDER}
@@ -72,6 +73,7 @@ def main():
         "constraint_accuracy": acc(kinds["constraint"]),
         "state_accuracy": acc(kinds["state"]),
         "resist_accuracy": acc(kinds["resist"]),
+        "cross_accuracy": acc(kinds["cross"]),
         "endurance_score": acc(deep),
     }
     json.dump(rep, open(os.path.join(ROOT, "report.json"), "w", encoding="utf-8"),

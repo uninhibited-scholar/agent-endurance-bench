@@ -21,7 +21,8 @@
 
 ## 路线图
 - **v2 已完成 2026-07-11**：3×200 步高压 episode（负数算术/同谎×3/错误审批码/假预算），成功拉开双模型：glm-5.2 slope 0.30、xxlong 0.70、state 0.681；deepseek 180 探针全对（饱和）。
-- **v3**：干扰写进任务步（无法按步型忽略）、多约束交叉探针、任务文本噪声化、500 步级。
+- **v3 已完成 2026-07-11**：3×500步、干扰内嵌task步、cross多约束探针。glm state@500 崩到 5/39(13%)、slope 0.502；deepseek 330探针连续第三次全对。
+- **v4（需质变）**：deepseek 对"规则记忆+数值状态"类构造已饱和，量变无效。候选方向：(a) 探针依赖多步推理链而非单步查表；(b) 需要模型主动发现矛盾（如预算将超支需提前预警）；(c) 无确定性gold的开放子任务改用程序化断言。
 - **v1.x**：多模型排行榜（GLM / Qwen / DeepSeek / Doubao + GPT / Claude），画各模型 retention curve 对比图。
 - **v2**：工具调用版 episode（约束表现为工具使用规则），与 [agent-safety-bench-zh](https://github.com/uninhibited-scholar/agent-safety-bench-zh) 打通。
 

@@ -33,7 +33,7 @@ def main():
                 o = json.loads(l); preds[(o["episode_id"], int(o["step"]))] = o.get("answer","")
         dec = {}
         for (eid, step), gold in golds.items():
-            d = min((step - 1) // 10, 19)
+            d = min((step - 1) // 10, 49)
             hit, tot = dec.get(d, (0, 0))
             ok = (eid, step) in preds and norm(preds[(eid, step)]) == norm(gold)
             dec[d] = (hit + ok, tot + 1)
