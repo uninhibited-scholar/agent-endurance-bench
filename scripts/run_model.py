@@ -35,13 +35,13 @@ def call(base, key, model, messages, max_tokens):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
-    ap.add_argument("--base-url", default=os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1"))
+    ap.add_argument("--base-url", default=os.environ.get("OPENAI_BASE_URL", "http://localhost:11434/v1"))
     ap.add_argument("--key", default=os.environ.get("OPENAI_API_KEY", ""))
     ap.add_argument("--episodes", default="")
     ap.add_argument("--out", default="")
     a = ap.parse_args()
-    if not a.key:
-        print("ERROR: set OPENAI_API_KEY"); return 2
+    if not a.key and "localhost" not in a.base_url and "127.0.0.1" not in a.base_url:
+        print("ERROR: 云端端点需 set OPENAI_API_KEY（本地 Ollama 无需 key）"); return 2
     out = a.out or os.path.join(ROOT, f"predictions_{re.sub(r'[^a-zA-Z0-9._-]','_',a.model)}.jsonl")
     eps = [json.loads(l) for l in open(os.path.join(ROOT,"data","episodes.jsonl"),encoding="utf-8") if l.strip()]
     if a.episodes:

@@ -59,7 +59,9 @@ window_agent  (probe accuracy by step decile)
 
 ## 跑真实模型
 ```bash
-export OPENAI_API_KEY=...     # 任意 OpenAI 兼容端点
+# 默认走本地 Ollama（http://localhost:11434/v1，无需 key）：
+# ollama serve && python3 scripts/run_model.py --model qwen2.5
+# 云端可选：export OPENAI_API_KEY=... OPENAI_BASE_URL=<端点>
 python3 scripts/run_model.py --model <模型名> [--base-url <端点>]
 python3 scripts/score.py predictions_<模型名>.jsonl
 python3 scripts/curve.py predictions_<模型名>.jsonl   # ASCII retention 曲线
